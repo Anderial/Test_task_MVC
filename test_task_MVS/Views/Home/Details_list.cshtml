@@ -1,0 +1,30 @@
+﻿@model test_task_MVS.Models.ListModel
+@{
+    ViewBag.Title = "О кандидате:";
+}
+
+<div>
+    <h3>@Model.full_name</h3>
+    <ul>
+        <li>
+            <u>Должнось:</u> @Model.vacancy
+        </li>
+        <li>
+            <u>Опыт работы:</u> @Model.experience
+        </li>
+        <li>
+            <u>Профессиональные навыки:</u> @Model.professional_skills
+        </li>
+        <li>
+            <u>Личные качества:</u> @Model.personal_qualities
+        </li>
+        <li>
+            <u>Почтопый адрес:</u> @Model.mail
+        </li>
+        <li>
+            <u>Телефон:</u> @Model.fone
+        </li>
+    </ul>
+                
+
+</div>

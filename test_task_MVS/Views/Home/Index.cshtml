@@ -1,0 +1,18 @@
+﻿@model IEnumerable<test_task_MVS.Models.ListModel>
+@{
+    ViewBag.Title = "Главная страница";
+}
+
+
+<div>
+    <h3>Список всех заявок</h3>
+    <ul>
+        @foreach (test_task_MVS.Models.ListModel list in Model)
+        {
+            <li>
+                <a href="Home/Details_list/@list.applicationId">@list.full_name</a>
+                <br>
+            </li>
+        }
+    </ul>
+</div>
